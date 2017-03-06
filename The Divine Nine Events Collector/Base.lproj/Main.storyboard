@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nbb-X1-lnK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +23,105 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="JpQ-IY-nmR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bbY-Pa-nxc">
+                            <connections>
+                                <segue destination="gco-3U-iFV" kind="show" id="YpM-mu-VMu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="740" y="778"/>
+        </scene>
+        <!--The Divine Nine Events View Controller-->
+        <scene sceneID="scP-wF-RtP">
+            <objects>
+                <viewController id="gco-3U-iFV" customClass="theDivineNineEventsViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7GB-oz-72n"/>
+                        <viewControllerLayoutGuide type="bottom" id="obv-49-5wV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VDK-87-7E9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APA CS Test Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0y2-o8-Bxs">
+                                <rect key="frame" x="47.5" y="84" width="280" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="GdX-DM-zRV"/>
+                                    <constraint firstAttribute="width" constant="280" id="hvx-GA-k0E"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwf-QG-9St">
+                                <rect key="frame" x="47.5" y="254" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OW-N1-Z5L">
+                                <rect key="frame" x="172.5" y="304" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="gco-3U-iFV" eventType="touchUpInside" id="YaQ-sw-1Ie"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0y2-o8-Bxs" firstAttribute="top" secondItem="7GB-oz-72n" secondAttribute="bottom" constant="20" id="9rz-bI-k76"/>
+                            <constraint firstItem="mwf-QG-9St" firstAttribute="centerX" secondItem="VDK-87-7E9" secondAttribute="centerX" id="On5-RS-hX9"/>
+                            <constraint firstItem="mwf-QG-9St" firstAttribute="width" secondItem="0y2-o8-Bxs" secondAttribute="width" id="TvK-J3-l1B"/>
+                            <constraint firstItem="5OW-N1-Z5L" firstAttribute="top" secondItem="mwf-QG-9St" secondAttribute="bottom" constant="20" id="XcK-tv-pHt"/>
+                            <constraint firstItem="mwf-QG-9St" firstAttribute="top" secondItem="0y2-o8-Bxs" secondAttribute="bottom" constant="20" id="cBx-z4-nXr"/>
+                            <constraint firstItem="5OW-N1-Z5L" firstAttribute="centerX" secondItem="VDK-87-7E9" secondAttribute="centerX" id="dCy-Ah-Ovb"/>
+                            <constraint firstItem="0y2-o8-Bxs" firstAttribute="centerX" secondItem="VDK-87-7E9" secondAttribute="centerX" id="dyM-Cx-hB3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A4y-Xx-Frs">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="vtT-3G-zh1">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="gco-3U-iFV" id="5hf-g8-Ota"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="6Y6-8O-MCl">
+                                <connections>
+                                    <action selector="photosTapped:" destination="gco-3U-iFV" id="z9f-cV-BiG"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventsimageView" destination="0y2-o8-Bxs" id="0kT-Re-sP2"/>
+                        <outlet property="titleTextField" destination="mwf-QG-9St" id="WjW-E0-qPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXO-ra-8eX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="778"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CpD-EL-E97">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbb-X1-lnK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C5l-sM-Avs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="46V-do-t2D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOH-jg-ZFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="777.66116941529242"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="APA CS Test Image.jpg" width="259" height="194"/>
+    </resources>
 </document>

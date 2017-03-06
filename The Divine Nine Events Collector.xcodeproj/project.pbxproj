@@ -13,6 +13,8 @@
 		4DCE43121E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE43101E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld */; };
 		4DCE43141E6D166A0023885F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE43131E6D166A0023885F /* Assets.xcassets */; };
 		4DCE43171E6D166A0023885F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE43151E6D166A0023885F /* LaunchScreen.storyboard */; };
+		4DCE431F1E6D21550023885F /* APA CS Test Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE431E1E6D21550023885F /* APA CS Test Image.jpg */; };
+		4DCE43211E6D23010023885F /* theDivineNineEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE43201E6D23010023885F /* theDivineNineEventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4DCE43131E6D166A0023885F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DCE43161E6D166A0023885F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DCE43181E6D166A0023885F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCE431E1E6D21550023885F /* APA CS Test Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "APA CS Test Image.jpg"; sourceTree = "<group>"; };
+		4DCE43201E6D23010023885F /* theDivineNineEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theDivineNineEventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				4DCE43091E6D16690023885F /* AppDelegate.swift */,
 				4DCE430B1E6D16690023885F /* ViewController.swift */,
+				4DCE43201E6D23010023885F /* theDivineNineEventsViewController.swift */,
 				4DCE430D1E6D166A0023885F /* Main.storyboard */,
+				4DCE431E1E6D21550023885F /* APA CS Test Image.jpg */,
 				4DCE43131E6D166A0023885F /* Assets.xcassets */,
 				4DCE43151E6D166A0023885F /* LaunchScreen.storyboard */,
 				4DCE43181E6D166A0023885F /* Info.plist */,
@@ -130,6 +136,7 @@
 				4DCE43171E6D166A0023885F /* LaunchScreen.storyboard in Resources */,
 				4DCE43141E6D166A0023885F /* Assets.xcassets in Resources */,
 				4DCE430F1E6D166A0023885F /* Main.storyboard in Resources */,
+				4DCE431F1E6D21550023885F /* APA CS Test Image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCE43211E6D23010023885F /* theDivineNineEventsViewController.swift in Sources */,
 				4DCE430C1E6D16690023885F /* ViewController.swift in Sources */,
 				4DCE43121E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld in Sources */,
 				4DCE430A1E6D16690023885F /* AppDelegate.swift in Sources */,
