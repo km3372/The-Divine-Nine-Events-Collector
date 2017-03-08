@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="740" y="778"/>
         </scene>
-        <!--The Divine Nine Events View Controller-->
+        <!--Event View Controller-->
         <scene sceneID="scP-wF-RtP">
             <objects>
-                <viewController id="gco-3U-iFV" customClass="theDivineNineEventsViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gco-3U-iFV" customClass="EventViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7GB-oz-72n"/>
                         <viewControllerLayoutGuide type="bottom" id="obv-49-5wV"/>
@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="width" constant="280" id="hvx-GA-k0E"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwf-QG-9St">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chapter's Event Tilte" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwf-QG-9St">
                                 <rect key="frame" x="47.5" y="254" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,7 +64,7 @@
                                 <rect key="frame" x="172.5" y="304" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="gco-3U-iFV" eventType="touchUpInside" id="YaQ-sw-1Ie"/>
+                                    <action selector="addTapped:" destination="gco-3U-iFV" eventType="touchUpInside" id="J21-fH-Fp3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,19 +83,21 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="vtT-3G-zh1">
                                 <connections>
-                                    <action selector="cameraTapped:" destination="gco-3U-iFV" id="5hf-g8-Ota"/>
+                                    <action selector="cameraTapped:" destination="gco-3U-iFV" id="R13-Qh-Q1o"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Photos" id="6Y6-8O-MCl">
                                 <connections>
-                                    <action selector="photosTapped:" destination="gco-3U-iFV" id="z9f-cV-BiG"/>
+                                    <action selector="photosTapped:" destination="gco-3U-iFV" id="lok-uO-tHK"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="eventImageView" destination="0y2-o8-Bxs" id="TkE-xI-u2X"/>
                         <outlet property="eventsimageView" destination="0y2-o8-Bxs" id="0kT-Re-sP2"/>
                         <outlet property="titleTextField" destination="mwf-QG-9St" id="WjW-E0-qPE"/>
+                        <outlet property="titleTextsField" destination="mwf-QG-9St" id="wbz-As-wke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXO-ra-8eX" userLabel="First Responder" sceneMemberID="firstResponder"/>
