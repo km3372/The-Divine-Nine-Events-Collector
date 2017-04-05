@@ -64,9 +64,9 @@
 				4D56377C1E6E4655005EBF60 /* ViewController.swift */,
 				4D8289361E6E5794000B729E /* interViewController.swift */,
 				4DCE430D1E6D166A0023885F /* Main.storyboard */,
+				4DCE43151E6D166A0023885F /* LaunchScreen.storyboard */,
 				4DCE431E1E6D21550023885F /* APA CS Test Image.jpg */,
 				4DCE43131E6D166A0023885F /* Assets.xcassets */,
-				4DCE43151E6D166A0023885F /* LaunchScreen.storyboard */,
 				4DCE43181E6D166A0023885F /* Info.plist */,
 				4DCE43101E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld */,
 			);

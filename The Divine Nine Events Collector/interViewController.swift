@@ -31,7 +31,7 @@ class interViewController: UIViewController, UIImagePickerControllerDelegate, UI
         present(imagePicker, animated: true, completion: nil)
     }
     
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
        let image =  info[UIImagePickerControllerOriginalImage] as! UIImage
         
         eventImageView.image = image
@@ -46,12 +46,13 @@ class interViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBAction func addTapped(_ sender: Any) {
        
         
-        /*        let context = (UIApplication.shared.delegate as! AppDelegate) .persistentContainer.viewContext
+        let context = (UIApplication.shared.delegate as! AppDelegate) .persistentContainer.viewContext
        
-        let event = Event(context: context)
-        event.title = titleTextsField.text
-        event.image = UIImagePNGRepresentation(eventImageView.image!)
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-    */
+        let eventPhotos = Photos(context: context)
+        eventPhotos.title = titleTextsField.text
+        eventPhotos.image = UIImagePNGRepresentation(eventImageView.image!) as NSData?
+        
+        (UIApplication.shared.delegate as! AppDelegate) .saveContext()
+    
     }
 }
