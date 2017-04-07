@@ -8,7 +8,7 @@
 
 import UIKit
 
-class interViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class InterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var titleTextsField: UITextField!
     
@@ -35,6 +35,7 @@ class interViewController: UIViewController, UIImagePickerControllerDelegate, UI
        let image =  info[UIImagePickerControllerOriginalImage] as! UIImage
         
         eventImageView.image = image
+        
         imagePicker.dismiss(animated: true, completion: nil)
         
     }
@@ -53,6 +54,8 @@ class interViewController: UIViewController, UIImagePickerControllerDelegate, UI
         eventPhotos.image = UIImagePNGRepresentation(eventImageView.image!) as NSData?
         
         (UIApplication.shared.delegate as! AppDelegate) .saveContext()
+        
+        navigationController!.popViewController(animated: true)
     
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D56377D1E6E4655005EBF60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D56377C1E6E4655005EBF60 /* ViewController.swift */; };
-		4D8289371E6E5794000B729E /* interViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8289361E6E5794000B729E /* interViewController.swift */; };
+		4D8289371E6E5794000B729E /* InterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8289361E6E5794000B729E /* InterViewController.swift */; };
 		4DCE430A1E6D16690023885F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE43091E6D16690023885F /* AppDelegate.swift */; };
 		4DCE430F1E6D166A0023885F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCE430D1E6D166A0023885F /* Main.storyboard */; };
 		4DCE43121E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE43101E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4D56377C1E6E4655005EBF60 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D8289361E6E5794000B729E /* interViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interViewController.swift; sourceTree = "<group>"; };
+		4D8289361E6E5794000B729E /* InterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterViewController.swift; sourceTree = "<group>"; };
 		4DCE43061E6D16680023885F /* The Divine Nine Events Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Divine Nine Events Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCE43091E6D16690023885F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DCE430E1E6D166A0023885F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				4DCE43091E6D16690023885F /* AppDelegate.swift */,
 				4D56377C1E6E4655005EBF60 /* ViewController.swift */,
-				4D8289361E6E5794000B729E /* interViewController.swift */,
+				4D8289361E6E5794000B729E /* InterViewController.swift */,
 				4DCE430D1E6D166A0023885F /* Main.storyboard */,
 				4DCE43151E6D166A0023885F /* LaunchScreen.storyboard */,
 				4DCE431E1E6D21550023885F /* APA CS Test Image.jpg */,
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8289371E6E5794000B729E /* interViewController.swift in Sources */,
+				4D8289371E6E5794000B729E /* InterViewController.swift in Sources */,
 				4DCE43121E6D166A0023885F /* The_Divine_Nine_Events_Collector.xcdatamodeld in Sources */,
 				4D56377D1E6E4655005EBF60 /* ViewController.swift in Sources */,
 				4DCE430A1E6D16690023885F /* AppDelegate.swift in Sources */,
