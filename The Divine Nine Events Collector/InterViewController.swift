@@ -1,5 +1,5 @@
 //
-//  EventViewController.swift
+//  InterViewController.swift
 //  The Divine Nine Events Collector
 //
 //  Created by Ken Moody on 3/6/17.
@@ -10,9 +10,13 @@ import UIKit
 
 class InterViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var titleTextsField: UITextField!
     
     @IBOutlet weak var eventImageView: UIImageView!
+    
+    @IBOutlet weak var titleTextsField: UITextField!
+    
+    
+    
     
     var imagePicker = UIImagePickerController()
     
@@ -31,6 +35,7 @@ class InterViewController: UIViewController, UIImagePickerControllerDelegate, UI
         present(imagePicker, animated: true, completion: nil)
     }
     
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
        let image =  info[UIImagePickerControllerOriginalImage] as! UIImage
         
@@ -39,13 +44,13 @@ class InterViewController: UIViewController, UIImagePickerControllerDelegate, UI
         imagePicker.dismiss(animated: true, completion: nil)
         
     }
-    
+   
     @IBAction func cameraTapped(_ sender: Any) {
     }
     
     
     @IBAction func addTapped(_ sender: Any) {
-       
+ 
         
         let context = (UIApplication.shared.delegate as! AppDelegate) .persistentContainer.viewContext
        

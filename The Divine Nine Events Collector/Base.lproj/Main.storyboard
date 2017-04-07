@@ -50,7 +50,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="7Me-wF-trX" id="ond-dk-yfs"/>
-                        <outlet property="tavleview" destination="7Me-wF-trX" id="q5Z-Ah-tkm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,7 +59,8 @@
         <!--Inter View Controller-->
         <scene sceneID="scP-wF-RtP">
             <objects>
-                <viewController id="gco-3U-iFV" customClass="interViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXO-ra-8eX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="gco-3U-iFV" customClass="InterViewController" customModule="The_Divine_Nine_Events_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7GB-oz-72n"/>
                         <viewControllerLayoutGuide type="bottom" id="obv-49-5wV"/>
@@ -74,9 +74,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="gco-3U-iFV" id="KFu-xB-K1A"/>
-                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APA CS Test Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0y2-o8-Bxs">
                                 <rect key="frame" x="47" y="98" width="280" height="194"/>
@@ -85,7 +82,7 @@
                                 <rect key="frame" x="172" y="379" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="gco-3U-iFV" eventType="touchUpInside" id="J21-fH-Fp3"/>
+                                    <action selector="photosTapped:" destination="gco-3U-iFV" eventType="touchUpInside" id="daJ-do-Bc9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,25 +103,17 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Lbb-Am-uf3">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="Tae-7J-ECp">
-                                <connections>
-                                    <action selector="cameraTapped:" destination="gco-3U-iFV" id="kTU-EH-dD5"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Photos" id="MRU-ON-Wyp">
-                                <connections>
-                                    <action selector="photosTapped:" destination="gco-3U-iFV" id="VMG-u8-FGo"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="Tae-7J-ECp"/>
+                            <barButtonItem title="Photos" id="MRU-ON-Wyp"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="eventImageView" destination="0y2-o8-Bxs" id="FeE-vw-2Wi"/>
+                        <outlet property="eventImageView" destination="0y2-o8-Bxs" id="ZKj-gF-scn"/>
+                        <outlet property="titleTextsField" destination="mwf-QG-9St" id="hCu-ft-8hN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eXO-ra-8eX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1537" y="778"/>
+            <point key="canvasLocation" x="1537" y="786"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CpD-EL-E97">

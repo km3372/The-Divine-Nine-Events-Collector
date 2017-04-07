@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         let event = events[indexPath.row]
         cell.textLabel?.text = event.title
-        cell.imageView?.image = UIImage(data: event.image as! Data)
+        cell.imageView?.image = UIImage(data: event.image! as Data)
         
         return cell
     }
